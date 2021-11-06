@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script:wght@700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+background-color: rgb(157, 157, 235);
+overflow: hidden;
+}
+
+.container {
+width: 45%;
+margin: 32px auto;
+}
+
+.header {
+height: 250px;
+text-align: center;
+}
+
+.header h1 {
+    color: rgb(228, 213, 195);
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+   /* animation-iteration-count: infinite;*/
+
+
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 100px}
+}
+
+.main {
+    color: cornsilk;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.5;
+}
+
+.text-left {
+    position: relative;
+    animation: textLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}   
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+    
+}
+
+.text-right {
+    margin-top: 32px;
+    position: relative;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 4s;
+}
+
+@keyframes textRight {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+
+}
+
+.footer {
+text-align: center;
+}   
+
+.btn {
+    opacity: 0;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Crimson Text', serif;
+display: inline-block;
+margin: 2rem;
+padding: 1rem;
+text-decoration: none;
+text-transform: uppercase;
+animation: aniBtn;
+animation-duration: 5s;
+animation-delay: 3s;
+animation-fill-mode: forwards;
+}    
+
+@keyframes aniBtn {
+    0% {opacity: 0;} /*o - 1*/
+    100% {opacity: 1;}
+}    
